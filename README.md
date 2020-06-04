@@ -46,8 +46,6 @@ First drake Mountain Drake winrate = 64.86%
 
 ## Dragon vs Herald Analysis
 
-## Same # of Dragons Analysis (4 drakes, 3 drakes...)
-
 # Dragon Soul
 
 ## Win Rate with Soul
@@ -56,15 +54,31 @@ Win rate with soul is : 89.47%
 ## Win Time After Soul
 
 ## Soul Type vs Win Rate
-Win Rate with Air Soul is : 89.03%
+Win Rate with Wind Soul is : 89.03%
 Win Rate with Fire Soul is : 89.14%
 Win Rate with Mountain Soul is : 89.75%
 Win Rate with Water Soul is : 90.13%
 
+### Win Rate with Several Elemental Drakes
+Win Rate with 2 Soul Elemental Drakes is : 90.68%
+Win Rate with 3 Soul Elemental Drakes is : 86.72%
+Win Rate with 4 Soul Elemental Drakes is : 84.05%
+
+
+### Win Rate With 4 Elemental Drakes
+(0.8170631665299426, 0.8578352180936996, 0.861271676300578, 0.8257328990228013)
+Win Rate with 4 Wind Rakes : 81.71%
+
+Win Rate with 4 Fire Rakes : 85.78%
+
+Win Rate with 4 Wind Rakes : 86.13%
+
+Win Rate with 4 Wind Rakes : 82.57%
+
 # Elder Dragon
 
 ## Win Rate with Elder Buff
-Win Rate with Elder Buff is : 0.8593261238716596
+Win Rate with Elder Buff is : 85.93%
 
 ## Win Time with Elder Buff
 
