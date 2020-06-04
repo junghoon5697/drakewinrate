@@ -55,18 +55,23 @@ Win rate with soul is : 89.47%
 
 ## Soul Type vs Win Rate
 Win Rate with Wind Soul is : 89.03%
+
 Win Rate with Fire Soul is : 89.14%
+
 Win Rate with Mountain Soul is : 89.75%
+
 Win Rate with Water Soul is : 90.13%
 
 ### Win Rate with Several Elemental Drakes
 Win Rate with 2 Soul Elemental Drakes is : 90.68%
+
 Win Rate with 3 Soul Elemental Drakes is : 86.72%
+
 Win Rate with 4 Soul Elemental Drakes is : 84.05%
 
 
 ### Win Rate With 4 Elemental Drakes
-(0.8170631665299426, 0.8578352180936996, 0.861271676300578, 0.8257328990228013)
+
 Win Rate with 4 Wind Rakes : 81.71%
 
 Win Rate with 4 Fire Rakes : 85.78%
@@ -81,6 +86,7 @@ Win Rate with 4 Wind Rakes : 82.57%
 Win Rate with Elder Buff is : 85.93%
 
 ## Win Time with Elder Buff
+![GitHub Logo](https://github.com/junghoon5697/drakewinrate/blob/master/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-06-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%208.36.29.png)
 
 ## Win Rate with Soul and Elder
 
