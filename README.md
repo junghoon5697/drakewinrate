@@ -7,58 +7,57 @@
 
 먼저 소환사 협곡 모드에서 원소 용의 영향을 분석하고자 합니다. 원소용은 화염, 바람, 바다, 그리고 대지용으로 총 4가지가 존재합니다. 각각의 용 효과는 아래와 같습니다.
 
-(시간이 조금 더 있었으면 보고 싶은 내용 : 용 영혼 종류에 따른 협곡 변화가 이기는 팀한테 미치는 영향)
 
 영혼 효과:
 
-(바람) : 궁극기 재사용 대기시간 10/20/30/40% 감소, 재사용 대기시간 최대치 초과 가능
+- (바람) : 궁극기 재사용 대기시간 10/20/30/40% 감소, 재사용 대기시간 최대치 초과 가능
 
-(화염) : 공격력 및 주문력 +4/8/12/16% 증가
+- (화염) : 공격력 및 주문력 +4/8/12/16% 증가
 
-(바다) : 매 5초마다 잃은 체력의 2.5/5/7.5/10% 회복
+- (바다) : 매 5초마다 잃은 체력의 2.5/5/7.5/10% 회복
 
-(대지) : 방어력 및 마법 저항력 +6/12/18/24%
+- (대지) : 방어력 및 마법 저항력 +6/12/18/24%
 
 ## First Dragon Analysis
 첫번째 드래곤이 게임 승리에 끼치는 영향은 아래와 같습니다.
 
 ### First Dragon Time Stats
 
-Average 1st Drake Time : 9mins 10 seconds
+- Average 1st Drake Time : 9mins 10 seconds
 
-1st Drake Time Median : 8mins 41 seconds
+- 1st Drake Time Median : 8mins 41 seconds
 
-1st Drake Slain Time Distribution 
+- 1st Drake Slain Time Distribution 
 
 ![GitHub Logo](https://github.com/junghoon5697/drakewinrate/blob/master/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-06-04%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%206.56.33.png)
 
 ### First Dragon Time per Tier
 
-IRON : 9min 16sec
+- IRON : 9min 16sec
 
-BRONZE : 9min 19sec
+- BRONZE : 9min 19sec
 
-SILVER : 9min 29sec
+- SILVER : 9min 29sec
 
-GOLD : 8min 58sec
+- GOLD : 8min 58sec
 
-PLATINUM : 8min 18sec
+- PLATINUM : 8min 18sec
 
-DIAMOND : 7min 41sec
+- DIAMOND : 7min 41sec
 
-MASTER + : 7min 20sec
+- MASTER + : 7min 20sec
 
 ### First Dragon Win Rate
 
-First Dragon Win Rate= 64.88%
+- First Dragon Win Rate= 64.88%
 
-First drake Fire Drake winrate = 65.56%
+- First drake Fire Drake winrate = 65.56%
 
-First drake Water Drake winrate = 66.93%
+- First drake Water Drake winrate = 66.93%
 
-First drake Air Drake winrate = 61.91%
+- First drake Air Drake winrate = 61.91%
 
-First drake Mountain Drake winrate = 64.86%
+- First drake Mountain Drake winrate = 64.86%
 
 첫 용을 보통 6-9분 쯤에 먹는 것으로 확인이 되었습니다. 전반적으로 용을 먹는다는 것 자체가 게임 초반에 주도권을 가지고 있다는 뜻이라서 그런지 첫번째 용을 챙기기만 할 수 있다면 승률이 60%를 상회하는 것을 확인 할 수 있었습니다. 역시나 스노우볼을 잘 굴리는 윗 티어 일 수록 이를 캐치하고 첫번째 용을 다른 티어들 보다는 좀 더 일찍 챙기고자 하는 모습이 드러나 있습니다.
 
@@ -70,75 +69,79 @@ First drake Mountain Drake winrate = 64.86%
 
 첫 번째 용 타이밍과 승률의 상관관계 그래프입니다. 사실 첫 번째 용을 10분안에 먹는 경우가 압도적으로 많지만, 신기하게도 10분대 이후에 첫번째 용이 먹히게 되면 승률이 굉장히 올라가는 것으로 확인할 수 있었습니다. 아마도 그만큼 첫번째 용을 먼저 치기가 어려울 정도로 게임이 팽팽한 상황에서 첫번째 용을 먼저 먹게 되는 것이 그 용을 챙기는 팀한테 굉장히 큰 의미를 가지게 되기 때문에 이러한 현상이 나타나는 것으로 추정됩니다. 
 
-#시간 남으면 전령 분석 혹은 교환 구도 등도 확인하고 싶었으나...
 
 # Dragon Soul
 
 다음으로 용의 영혼에 관한 분석을 진행해보겠습니다. 용의 영혼은 이기는 팀이 총 4개의 용을 획득 했을 때 영구적으로 생기는 버프로, 3번째 원소 용의 종류에 따라서 용의 영혼이 결정됩니다. 각각의 영혼이 주는 이로운 효과는 다음과 같습니다 :
 
-바람용의 영혼 : 기본 지속 효과로 이동 속도가 10% 증가합니다. 궁극기를 사용하면 이동 속도가 6초간 추가로 50% 증가합니다. (재사용 대기시간 30초)
+- 바람용의 영혼 : 기본 지속 효과로 이동 속도가 10% 증가합니다. 궁극기를 사용하면 이동 속도가 6초간 추가로 50% 증가합니다. (재사용 대기시간 30초)
 
-대지용의 영혼 : 5초 동안 피해를 입지 않으면 170 (+추가 공격력의 16%) (+주문력의 13%) (+추가 체력의 13%)의 피해를 흡수하는 보호막을 획득.
+- 대지용의 영혼 : 5초 동안 피해를 입지 않으면 170 (+추가 공격력의 16%) (+주문력의 13%) (+추가 체력의 13%)의 피해를 흡수하는 보호막을 획득.
 
-화염용의 영혼 : 3초마다 다음 기본 공격 또는 공격 스킬이 작은 광역 폭발을 일으켜 대상과 주변 적들에게 70 (+추가 공격력의 18%) (+주문력의 12%) (+추가 체력의 2%)의 적응형 피해를 입힙니다
+- 화염용의 영혼 : 3초마다 다음 기본 공격 또는 공격 스킬이 작은 광역 폭발을 일으켜 대상과 주변 적들에게 70 (+추가 공격력의 18%) (+주문력의 12%) (+추가 체력의 2%)의 적응형 피해를 입힙니다
 
-바다용의 영혼 : 적 챔피언에게 피해를 입히면 4초에 걸쳐 160 (+추가 공격력의 25%) (+주문력의 15%) (+추가 체력의 7%)의 체력 및 70 (+최대 마나의 2.5%)의 마나를 회복합니다. 미니언 또는 몬스터에게 피해를 입히면 해당 회복 효과의 30%가 발동됩니다.
+- 바다용의 영혼 : 적 챔피언에게 피해를 입히면 4초에 걸쳐 160 (+추가 공격력의 25%) (+주문력의 15%) (+추가 체력의 7%)의 체력 및 70 (+최대 마나의 2.5%)의 마나를 회복합니다. 미니언 또는 몬스터에게 피해를 입히면 해당 회복 효과의 30%가 발동됩니다.
 
 
 ## Win Rate with Soul
 Win rate with soul : 89.47%
 
 ## Soul Type vs Win Rate
-Win Rate with Wind Soul : 89.03%
+- Win Rate with Wind Soul : 89.03%
 
-Win Rate with Fire Soul : 89.14%
+- Win Rate with Fire Soul : 89.14%
 
-Win Rate with Mountain Soul  89.75%
+- Win Rate with Mountain Soul  89.75%
 
-Win Rate with Water Soul : 90.13%
+- Win Rate with Water Soul : 90.13%
 
-Win Rate with Wind Soul in Plat + : 81.19%
+- Win Rate with Wind Soul in Plat + : 81.19%
 
-Win Rate with Fire Soul in Plat + : 90.20%
+- Win Rate with Fire Soul in Plat + : 90.20%
 
-Win Rate with Mountain Soul in Plat + : 85.57%
+- Win Rate with Mountain Soul in Plat + : 85.57%
 
-Win Rate with Water Soul in Plat + : 86.58%
+- Win Rate with Water Soul in Plat + : 86.58%
 
 역시나 용의 영혼은 강력했습니다. 용의 영혼을 획득하기만 하면 89.47%의 확률로 승리를 할 정도로 사실상 먹을 수만 있으면 매우 유리한 고지를 점할 수 있었습니다. 역시나 제일 사기라고 불리는 바다용의 영혼이 획득하기만 하면 승률이 제일 높은 것으로 확인되고, 제일 천대 받는 바람용의 영혼 역시 승률 꼴등을 기록하는 것으로 확인되었습니다. 아무래도 바다용 영혼의 버프가 직관적으로 제일 전투 시 유지력에 도움이 많이 되기도 하고, 이후 중요 바론 교전에서 먼저 칠때 체력 관리가 상대적으로 더 수월한 것도 한 몫할 듯 합니다. 이 뿐만 아니라 협곡의 지형이 바다용의 영혼일 때에 부쉬가 생기게 되면 유리한 팀쪽에서 훨씬 더 스노우볼을 굴릴 여지가 많아서 승률이 높은 것으로 예측됩니다. 윗 티어로 올라갈수록 화염용의 승률이 더 높아지는 것을 확인할 수 있었습니다. 아무래도 좀 더 정교한 스킬샷과 한타력을 보여주는 상위티어에서는 다른 버프 보다도 화염용의 영혼이 주는 버프가 제일 의미가 큰 듯 합니다. 물론 상위티어에서도 바다용의 영혼은 효율이 좋고, 바람용의 영혼은 아쉬운것은 매한가지입니다.
 
 ### Win Rate with Several Elemental Drakes
-Win Rate with 2 Soul Elemental Drakes is : 90.68%
+- Win Rate with 2 Soul Elemental Drakes is : 90.68%
 
-Win Rate with 3 Soul Elemental Drakes is : 86.72%
+- Win Rate with 3 Soul Elemental Drakes is : 86.72%
 
-Win Rate with 4 Soul Elemental Drakes is : 84.05%
+- Win Rate with 4 Soul Elemental Drakes is : 84.05%
 
 ### Win Rate With 4 Elemental Drakes
 
-Win Rate with 4 Wind Drakes : 81.71%
+- Win Rate with 4 Wind Drakes : 81.71%
 
-Win Rate with 4 Fire Drakes : 85.78%
+- Win Rate with 4 Fire Drakes : 85.78%
 
-Win Rate with 4 Mountain Drakes : 86.13%
+- Win Rate with 4 Mountain Drakes : 86.13%
 
-Win Rate with 4 Water Drakes : 82.57%
+- Win Rate with 4 Water Drakes : 82.57%
 
-Win Rate with 4 Wind Drakes in Plat + : 78.65%
+- Win Rate with 4 Wind Drakes in Plat + : 78.65%
 
-Win Rate with 4 Fire Drakes in Plat + : 90.23%
+- Win Rate with 4 Fire Drakes in Plat + : 90.23%
 
-Win Rate with 4 Wind Drakes in Plat + : 84.15%
+- Win Rate with 4 Wind Drakes in Plat + : 84.15%
 
-Win Rate with 4 Wind Drakes in Plat + : 80.69%
+- Win Rate with 4 Wind Drakes in Plat + : 80.69%
 
 같은 영혼 용을 여러개 가져갔을 시 승률의 차이 비교입니다. 같은 영혼 용이 2개일 경우는 게임 시작 후 처음 나오는 두개의 용을 획득 할 정도로 유리했기에 결국 게임을 굳히기도 제일 쉬운 것이 승률로도 나타나는 모습입니다. 비슷한 맥락으로 같은 영혼 용을 4개 먹을 경우에는 초반 두개의 용을 포기하게 되는 상황이 생겼다는 뜻이기 때문에 일반적으로 초반 상황이 좋지 못해서 그 전에 굴러간 스노우볼 때문에 설령 영혼을 먹더라도 승률이 상대적으로 낮은 것을 확인 할 수 있었습니다. 그럼에도 불구하고 영혼의 힘 자체가 굉장히 강력해서 획득하기만 했을 때에 승률이 84% 이상을 기록하는 모습을 확인 할 수 있었습니다.
 
 같은 영혼 용을 4번 먹었을 시 위력을 보면 의외로 대지용과 화염용 4스택의 승률이 제일 높은 것으로 확인 할 수 있었습니다. 이와 같은 현상은 상위 티어에서도 나타났으며, 상위 티어에서는 화염용 4스택을 먹었을 때 승률이 무려 90%에 도달하는 것을 확인할 수 있었습니다. 4스택 쌓였을 때 영혼이 주는 효과들만 보았을 때 방어력 +24% 와 공격력 및 주문력 +16% 증가가 각각의 원소용 영혼과 시너지를 제일 잘 내는 것으로 유추해 볼 수 있습니다. 역시나 상위 티어에서 화염용의 영혼이 보여주는 승률이 높고, 바람용 4스택의 가치는 윗 티어로 올라갈수록 더 떨어지는 것으로 확인됩니다.
 
-#시간이 났으면 용의 영혼 먹고 게임 끝내는데 까지 걸리는 시간도 확인
 
 # Elder Dragon
+
+장로용은 게임 후반에 등장하는 드래곤으로, 원소용의 영혼을 처치한 이후 6분 후에 등장하는 중립 몬스터입니다. 처치 시 드래곤의 성위라는 버프를 받게 되며 획득하는 팀은 다음과 같은 효과를 누릴 수 있습니다.
+
+포탑 이외의 대상을 공격할 때, 3초에 걸쳐 75 ~ 225 고정 피해를 입힙니다. (게임 시간 25분~45분에 따라)
+
+체력이 20% 이하인 적에게 피해를 입히면 0.5초 이후 장로의 화형 효과가 발동하며 적을 즉시 처치합니다. (재사용 대기시간 없음)
 
 ## Win Rate with Elder Buff
 Win Rate with Elder Buff is : 85.93%
@@ -147,11 +150,14 @@ Win Rate with Elder Buff is : 85.93%
 ![GitHub Logo](https://github.com/junghoon5697/drakewinrate/blob/master/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-06-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%208.36.29.png)
 
 ## Games With Elder Buff
-Iron ~ Gold : 4.86%
+- Iron ~ Gold : 4.86%
 
-Plat + : 3.35%
+- Plat + : 3.35%
 
 cf) Games with Dragon Soul : 24.65%
 
-장로용의 영혼 역시 약 86%의 승률을 보장해주는 매우 강력한 버프입니다. 놀랍게도 원소용의 영혼에 비해서 승률이 조금 덜 나오는데, 이것은 아마도 원소용의 영혼이 너무 강해서 이미 사실상 영혼에서 게임이 결정이 되는 상황이 많기 때문이라고 예측됩니다. 실제로 전체 게임 데이터중 장로용까지 가는 게임의 데이터는 5% 이하이며, 상위 티어에서는 약 3%의 게임에서만 장로용의 영혼을 획득하는 팀이 나옵니다. 하지만 위 그래프에서 보이듯이 장로용 버프가 지속되는 180초 이전에 끝나는 게임들이 대다수일 만큼 장로용의 영혼은 강력한 것으로 확인이 가능합니다. 
+장로용 역시 약 86%의 승률을 보장해주는 매우 강력한 버프입니다. 놀랍게도 원소용의 영혼에 비해서 승률이 조금 덜 나오는데, 이것은 아마도 원소용의 영혼이 너무 강해서 이미 사실상 영혼에서 게임이 결정이 되는 상황이 많기 때문이라고 예측됩니다. 실제로 전체 게임 데이터중 장로용까지 가는 게임의 데이터는 5% 이하이며, 상위 티어에서는 약 3%의 게임에서만 장로용을 획득하는 팀이 나옵니다. 하지만 위 그래프에서 보이듯이 장로용 버프가 지속되는 180초 이전에 끝나는 게임들이 대다수일 만큼 장로용은 강력한 것으로 확인이 가능합니다. 
 
+
+
+(시간이 조금 더 있었으면 보고 싶은 내용 : 용과 전령 교환 구도시 승률 변화, 용의 영혼을 먹은 후 게임이 끝나는 시간)
